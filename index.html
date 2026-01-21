@@ -1,261 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>John Christian Estay | IT Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>John Christian Estay | IT Portfolio</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f5f7fa;
-      color: #333;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
 
-    header {
-      background: linear-gradient(135deg, #007bff, #0056b3);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
+header {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
+nav {
+  background: #222;
+  text-align: center;
+}
 
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
+nav a {
+  color: white;
+  padding: 15px 25px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    nav {
-      background: #222;
-      text-align: center;
-    }
+nav a:hover { background: #007bff; }
 
-    nav a {
-      display: inline-block;
-      color: white;
-      padding: 15px 25px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+.container {
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
 
-    nav a:hover {
-      background: #007bff;
-    }
+h2 {
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: 40px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
+.section { margin-bottom: 40px; }
 
-    h2 {
-      color: #0056b3;
-      border-bottom: 2px solid #0056b3;
-      padding-bottom: 5px;
-    }
+.projects-list li {
+  background: #e9f1ff;
+  margin: 10px 0;
+  padding: 10px;
+  border-left: 5px solid #0056b3;
+  list-style: none;
+}
 
-    .section {
-      margin-bottom: 40px;
-    }
+canvas {
+  display: block;
+  margin: 20px auto;
+  border: 3px solid #0056b3;
+  background: #f5f7fa;
+}
 
-    .skills-list, .projects-list, .cert-list {
-      list-style: none;
-      padding: 0;
-    }
+/* GAME CONTROLS */
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
 
-    .skills-list li, .projects-list li, .cert-list li {
-      background: #e9f1ff;
-      margin: 10px 0;
-      padding: 10px 15px;
-      border-left: 5px solid #0056b3;
-      border-radius: 5px;
-    }
+.dpad {
+  display: grid;
+  grid-template-columns: 60px 60px 60px;
+  grid-template-rows: 60px 60px 60px;
+  gap: 5px;
+}
 
-    canvas {
-      display: block;
-      margin: 20px auto;
-      border: 3px solid #0056b3;
-      background-color: #f5f7fa;
-    }
+.dpad button {
+  font-size: 24px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 15px 0;
-      font-size: 0.9em;
-    }
+.dpad button:active {
+  background: #0056b3;
+}
 
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.8em; }
-      header p { font-size: 1em; }
-      nav a { display: block; border-bottom: 1px solid #333; }
-    }
-  </style>
+.empty { visibility: hidden; }
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-  <h1>John Christian Estay</h1>
-  <p>Aspiring IT Student | Student Athlete</p>
+<h1>John Christian Estay</h1>
+<p>Aspiring IT Student | Student Athlete</p>
 </header>
 
 <nav>
-  <a href="#about">About</a>
-  <a href="#skills">Skills</a>
-  <a href="#projects">Projects</a>
-  <a href="#certifications">Certifications</a>
-  <a href="#extracurriculars">Extracurriculars</a>
-  <a href="#contact">Contact</a>
+<a href="#projects">Projects</a>
 </nav>
 
 <div class="container">
 
-  <section id="about" class="section">
-    <h2>Professional Narrative</h2>
-    <p>
-      Hello! I'm <strong>John Christian Estay</strong>, an IT student driven by curiosity, creativity,
-      and a passion for technology. My career goal is to contribute to innovative solutions and
-      leverage my technical and analytical skills to enhance user experiences and optimize system performance.
-    </p>
-    <p>
-      I enjoy learning about web development, cloud computing, cybersecurity, and data analytics—
-      always seeking opportunities to refine my knowledge and collaborate with professionals in the tech industry.
-    </p>
-  </section>
+<section id="projects" class="section">
+<h2>Projects</h2>
 
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Web Development (HTML, CSS, JavaScript)</li>
-      <li>Database Management (MySQL, MongoDB)</li>
-      <li>Basic Networking and IT Support</li>
-      <li>Python for Automation and Data Analysis</li>
-      <li>Version Control (Git & GitHub)</li>
-    </ul>
-  </section>
+<ul class="projects-list">
+<li><strong>Snake Game:</strong> JavaScript + HTML5 Canvas with keypad support</li>
+</ul>
 
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <ul class="projects-list">
-      <li><strong>Personal Portfolio Website:</strong> Responsive portfolio showcasing skills.</li>
-      <li><strong>Inventory Management System:</strong> Database-driven stock tracking system.</li>
-      <li><strong>Weather App:</strong> API-based real-time weather application.</li>
-      <li><strong>Snake Game:</strong> Classic Snake game using HTML5 Canvas & JavaScript.</li>
-    </ul>
+<h3 style="text-align:center">🎮 Snake Game</h3>
+<p style="text-align:center">Score: <span id="score">0</span></p>
 
-    <h3 style="text-align:center;color:#0056b3;">🎮 Play Snake Game</h3>
-    <canvas id="gameCanvas" width="400" height="400"></canvas>
-    <p style="text-align:center;">Use <strong>Arrow Keys</strong> to control the snake</p>
-  </section>
+<canvas id="gameCanvas" width="400" height="400"></canvas>
 
-  <section id="certifications" class="section">
-    <h2>Certifications</h2>
-    <ul class="cert-list">
-      <li>Google IT Support Professional Certificate</li>
-      <li>Introduction to Cybersecurity - Cisco Networking Academy</li>
-      <li>Microsoft Office Specialist (MOS)</li>
-    </ul>
-  </section>
+<div class="controls">
+  <div class="dpad">
+    <div class="empty"></div>
+    <button onclick="setDirection('UP')">⬆</button>
+    <div class="empty"></div>
 
-  <section id="extracurriculars" class="section">
-    <h2>Extracurricular Activities</h2>
-    <p>
-      Active member of IT clubs and hackathons. Volunteered as a mentor in beginner coding workshops,
-      encouraging collaboration and leadership.
-    </p>
-  </section>
+    <button onclick="setDirection('LEFT')">⬅</button>
+    <div class="empty"></div>
+    <button onclick="setDirection('RIGHT')">➡</button>
 
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <strong>johnchristianestay@email.com</strong></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/johnchristianestay" target="_blank">linkedin.com/in/johnchristianestay</a></p>
-  </section>
+    <div class="empty"></div>
+    <button onclick="setDirection('DOWN')">⬇</button>
+    <div class="empty"></div>
+  </div>
+</div>
+
+<p style="text-align:center;margin-top:10px;">
+<button onclick="startGame()">Restart Game</button>
+</p>
+
+</section>
 
 </div>
 
 <footer>
-  &copy; 2024 John Christian Estay. All Rights Reserved.
+&copy; 2024 John Christian Estay
 </footer>
 
-<!-- SNAKE GAME SCRIPT -->
 <script>
-  const canvas = document.getElementById("gameCanvas");
-  const ctx = canvas.getContext("2d");
+const canvas = document.getElementById("gameCanvas");
+const ctx = canvas.getContext("2d");
+const scoreEl = document.getElementById("score");
 
-  const box = 20;
-  let snake = [{ x: 9 * box, y: 10 * box }];
-  let direction = "RIGHT";
-  let food = {
-    x: Math.floor(Math.random() * 19) * box,
-    y: Math.floor(Math.random() * 19) * box
+const box = 20;
+let snake, food, direction, gameLoop, score;
+
+function startGame() {
+  snake = [{ x: 200, y: 200 }];
+  direction = "RIGHT";
+  score = 0;
+  scoreEl.textContent = score;
+
+  food = {
+    x: Math.floor(Math.random() * 20) * box,
+    y: Math.floor(Math.random() * 20) * box
   };
-  let score = 0;
 
-  document.addEventListener("keydown", changeDirection);
+  clearInterval(gameLoop);
+  gameLoop = setInterval(draw, 120);
+}
 
-  function changeDirection(event) {
-    if (event.key === "ArrowLeft" && direction !== "RIGHT") direction = "LEFT";
-    if (event.key === "ArrowUp" && direction !== "DOWN") direction = "UP";
-    if (event.key === "ArrowRight" && direction !== "LEFT") direction = "RIGHT";
-    if (event.key === "ArrowDown" && direction !== "UP") direction = "DOWN";
+document.addEventListener("keydown", e => {
+  if (e.key === "ArrowUp") setDirection("UP");
+  if (e.key === "ArrowDown") setDirection("DOWN");
+  if (e.key === "ArrowLeft") setDirection("LEFT");
+  if (e.key === "ArrowRight") setDirection("RIGHT");
+});
+
+function setDirection(dir) {
+  if (dir === "LEFT" && direction !== "RIGHT") direction = "LEFT";
+  if (dir === "RIGHT" && direction !== "LEFT") direction = "RIGHT";
+  if (dir === "UP" && direction !== "DOWN") direction = "UP";
+  if (dir === "DOWN" && direction !== "UP") direction = "DOWN";
+}
+
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  snake.forEach((part, i) => {
+    ctx.fillStyle = i === 0 ? "#007bff" : "#0056b3";
+    ctx.fillRect(part.x, part.y, box, box);
+  });
+
+  ctx.fillStyle = "red";
+  ctx.fillRect(food.x, food.y, box, box);
+
+  let head = { ...snake[0] };
+
+  if (direction === "LEFT") head.x -= box;
+  if (direction === "RIGHT") head.x += box;
+  if (direction === "UP") head.y -= box;
+  if (direction === "DOWN") head.y += box;
+
+  if (
+    head.x < 0 || head.y < 0 ||
+    head.x >= canvas.width || head.y >= canvas.height ||
+    snake.some(p => p.x === head.x && p.y === head.y)
+  ) {
+    clearInterval(gameLoop);
+    alert("Game Over! Score: " + score);
+    return;
   }
 
-  function draw() {
-    ctx.fillStyle = "#f5f7fa";
-    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  snake.unshift(head);
 
-    snake.forEach((segment, index) => {
-      ctx.fillStyle = index === 0 ? "#007bff" : "#0056b3";
-      ctx.fillRect(segment.x, segment.y, box, box);
-    });
-
-    ctx.fillStyle = "red";
-    ctx.fillRect(food.x, food.y, box, box);
-
-    let headX = snake[0].x;
-    let headY = snake[0].y;
-
-    if (direction === "LEFT") headX -= box;
-    if (direction === "UP") headY -= box;
-    if (direction === "RIGHT") headX += box;
-    if (direction === "DOWN") headY += box;
-
-    if (headX === food.x && headY === food.y) {
-      score++;
-      food = {
-        x: Math.floor(Math.random() * 19) * box,
-        y: Math.floor(Math.random() * 19) * box
-      };
-    } else {
-      snake.pop();
-    }
-
-    const newHead = { x: headX, y: headY };
-
-    if (
-      headX < 0 || headY < 0 ||
-      headX >= canvas.width || headY >= canvas.height ||
-      snake.some(segment => segment.x === newHead.x && segment.y === newHead.y)
-    ) {
-      clearInterval(game);
-      alert("Game Over! Score: " + score);
-    }
-
-    snake.unshift(newHead);
+  if (head.x === food.x && head.y === food.y) {
+    score++;
+    scoreEl.textContent = score;
+    food = {
+      x: Math.floor(Math.random() * 20) * box,
+      y: Math.floor(Math.random() * 20) * box
+    };
+  } else {
+    snake.pop();
   }
+}
 
-  const game = setInterval(draw, 120);
+startGame();
 </script>
 
 </body>
