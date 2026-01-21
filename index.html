@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>John Christian Estay | IT Portfolio</title>
+
   <style>
     body {
       margin: 0;
@@ -78,6 +79,13 @@
       border-radius: 5px;
     }
 
+    canvas {
+      display: block;
+      margin: 20px auto;
+      border: 3px solid #0056b3;
+      background-color: #f5f7fa;
+    }
+
     footer {
       background: #222;
       color: white;
@@ -93,87 +101,162 @@
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>John Christian Estay</h1>
-    <p>Aspiring IT Student | Student Athlete </p>
-  </header>
+<header>
+  <h1>John Christian Estay</h1>
+  <p>Aspiring IT Student | Student Athlete</p>
+</header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#extracurriculars">Extracurriculars</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#extracurriculars">Extracurriculars</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <div class="container">
+<div class="container">
 
-    <section id="about" class="section">
-      <h2>Professional Narrative</h2>
-      <p>
-        Hello! I'm <strong>John Christian Estay</strong>, an IT student driven by curiosity, creativity, 
-        and a passion for technology. My career goal is to contribute to innovative solutions 
-        and leverage my technical and analytical skills to enhance user experiences and optimize system performance.
-      </p>
-      <p>
-        I enjoy learning about web development, cloud computing, cybersecurity, and data analytics— 
-        always seeking opportunities to refine my knowledge and collaborate with professionals in the tech industry.
-      </p>
-    </section>
+  <section id="about" class="section">
+    <h2>Professional Narrative</h2>
+    <p>
+      Hello! I'm <strong>John Christian Estay</strong>, an IT student driven by curiosity, creativity,
+      and a passion for technology. My career goal is to contribute to innovative solutions and
+      leverage my technical and analytical skills to enhance user experiences and optimize system performance.
+    </p>
+    <p>
+      I enjoy learning about web development, cloud computing, cybersecurity, and data analytics—
+      always seeking opportunities to refine my knowledge and collaborate with professionals in the tech industry.
+    </p>
+  </section>
 
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Web Development (HTML, CSS, JavaScript)</li>
-        <li>Database Management (MySQL, MongoDB)</li>
-        <li>Basic Networking and IT Support</li>
-        <li>Python for Automation and Data Analysis</li>
-        <li>Version Control (Git & GitHub)</li>
-      </ul>
-    </section>
+  <section id="skills" class="section">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Web Development (HTML, CSS, JavaScript)</li>
+      <li>Database Management (MySQL, MongoDB)</li>
+      <li>Basic Networking and IT Support</li>
+      <li>Python for Automation and Data Analysis</li>
+      <li>Version Control (Git & GitHub)</li>
+    </ul>
+  </section>
 
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <ul class="projects-list">
-        <li><strong>Personal Portfolio Website:</strong> A responsive portfolio site showcasing my skills and accomplishments (this project!)</li>
-        <li><strong>Inventory Management System:</strong> A simple database-driven application for product tracking and stock updates.</li>
-        <li><strong>Weather App:</strong> A web application using APIs to display weather conditions for any city in real time.</li>
-      </ul>
-    </section>
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <ul class="projects-list">
+      <li><strong>Personal Portfolio Website:</strong> Responsive portfolio showcasing skills.</li>
+      <li><strong>Inventory Management System:</strong> Database-driven stock tracking system.</li>
+      <li><strong>Weather App:</strong> API-based real-time weather application.</li>
+      <li><strong>Snake Game:</strong> Classic Snake game using HTML5 Canvas & JavaScript.</li>
+    </ul>
 
-    <section id="certifications" class="section">
-      <h2>Certifications</h2>
-      <ul class="cert-list">
-        <li>Google IT Support Professional Certificate</li>
-        <li>Introduction to Cybersecurity - Cisco Networking Academy</li>
-        <li>Microsoft Office Specialist (MOS) Certification</li>
-      </ul>
-    </section>
+    <h3 style="text-align:center;color:#0056b3;">🎮 Play Snake Game</h3>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <p style="text-align:center;">Use <strong>Arrow Keys</strong> to control the snake</p>
+  </section>
 
-    <section id="extracurriculars" class="section">
-      <h2>Extracurricular Activities</h2>
-      <p>
-        Actively participated in <strong>IT clubs and hackathons</strong> that foster technical innovation, teamwork, 
-        and leadership among aspiring developers. Also volunteered as a mentor for beginners in coding workshops, 
-        encouraging others to pursue careers in technology.
-      </p>
-    </section>
+  <section id="certifications" class="section">
+    <h2>Certifications</h2>
+    <ul class="cert-list">
+      <li>Google IT Support Professional Certificate</li>
+      <li>Introduction to Cybersecurity - Cisco Networking Academy</li>
+      <li>Microsoft Office Specialist (MOS)</li>
+    </ul>
+  </section>
 
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      <p>Email: <strong>johnchristianestay@email.com</strong></p>
-      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-      <p>LinkedIn: <a href="https://linkedin.com/in/johnchristianestay" target="_blank">linkedin.com/in/johnchristianestay</a></p>
-    </section>
+  <section id="extracurriculars" class="section">
+    <h2>Extracurricular Activities</h2>
+    <p>
+      Active member of IT clubs and hackathons. Volunteered as a mentor in beginner coding workshops,
+      encouraging collaboration and leadership.
+    </p>
+  </section>
 
-  </div>
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: <strong>johnchristianestay@email.com</strong></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/johnchristianestay" target="_blank">linkedin.com/in/johnchristianestay</a></p>
+  </section>
 
-  <footer>
-    &copy; 2024 John Christian Estay. All Rights Reserved.
-  </footer>
+</div>
+
+<footer>
+  &copy; 2024 John Christian Estay. All Rights Reserved.
+</footer>
+
+<!-- SNAKE GAME SCRIPT -->
+<script>
+  const canvas = document.getElementById("gameCanvas");
+  const ctx = canvas.getContext("2d");
+
+  const box = 20;
+  let snake = [{ x: 9 * box, y: 10 * box }];
+  let direction = "RIGHT";
+  let food = {
+    x: Math.floor(Math.random() * 19) * box,
+    y: Math.floor(Math.random() * 19) * box
+  };
+  let score = 0;
+
+  document.addEventListener("keydown", changeDirection);
+
+  function changeDirection(event) {
+    if (event.key === "ArrowLeft" && direction !== "RIGHT") direction = "LEFT";
+    if (event.key === "ArrowUp" && direction !== "DOWN") direction = "UP";
+    if (event.key === "ArrowRight" && direction !== "LEFT") direction = "RIGHT";
+    if (event.key === "ArrowDown" && direction !== "UP") direction = "DOWN";
+  }
+
+  function draw() {
+    ctx.fillStyle = "#f5f7fa";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    snake.forEach((segment, index) => {
+      ctx.fillStyle = index === 0 ? "#007bff" : "#0056b3";
+      ctx.fillRect(segment.x, segment.y, box, box);
+    });
+
+    ctx.fillStyle = "red";
+    ctx.fillRect(food.x, food.y, box, box);
+
+    let headX = snake[0].x;
+    let headY = snake[0].y;
+
+    if (direction === "LEFT") headX -= box;
+    if (direction === "UP") headY -= box;
+    if (direction === "RIGHT") headX += box;
+    if (direction === "DOWN") headY += box;
+
+    if (headX === food.x && headY === food.y) {
+      score++;
+      food = {
+        x: Math.floor(Math.random() * 19) * box,
+        y: Math.floor(Math.random() * 19) * box
+      };
+    } else {
+      snake.pop();
+    }
+
+    const newHead = { x: headX, y: headY };
+
+    if (
+      headX < 0 || headY < 0 ||
+      headX >= canvas.width || headY >= canvas.height ||
+      snake.some(segment => segment.x === newHead.x && segment.y === newHead.y)
+    ) {
+      clearInterval(game);
+      alert("Game Over! Score: " + score);
+    }
+
+    snake.unshift(newHead);
+  }
+
+  const game = setInterval(draw, 120);
+</script>
 
 </body>
 </html>
